@@ -1,0 +1,20 @@
+article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary{ display: block;}
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,a{margin:0;padding:0;}
+
+li,ul,ol{list-style:none;}
+a{text-decoration:none;color:#656565;}
+img{border:none;display:block;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+.blue{color:#3266cb;}
+/*----------全局样式----------*/
+
+/*-----head----------*/
+#head{height:29px;border-bottom:1px solid #e6e6e6;background:#f5f5f5;}
+.head{height:29px;width:1220px;font-family: "微软雅黑";font-size:12px;color:#656565;line-height:29px;}
+.head a:hover{color:#c10000;text-decoration: underline;}
+.l1 li{float:left;margin:0 10px;}
+.l1:first-child li{margin-left:20px;}
+.r1 li{float:right;}
+.r1 .r1a{margin-right:20px;}
+.r1 .r1b{margin-right:35px;}
+.r1 #r1c{margin:0 20px;text-indent:12px;background:url(../images/img1/h1.jpg) no-repeat 0px 7px;}
