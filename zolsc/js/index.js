@@ -62,3 +62,23 @@ var index=0
   }).mouseleave(function(){
   	$(this).find(".upward_hover").animate({"height":0},400)
   })
+
+
+//选项卡
+$(".noopsyche-focus_tab li").mouseenter(function(){
+	$(this).addClass("active").siblings().removeClass("active")
+	$("#noopsycheSlide li").eq($(this).index()).show().siblings().hide()
+})
+
+//动画
+$(".noopsyche-pro li").mouseenter(function(){
+	$(this).find(".noopsyche-pro_mark").animate({"top":0},350)
+}).mouseleave(function(){
+	$(this).find(".noopsyche-pro_mark").animate({"top":152},350)
+})
+
+//选项卡
+$(".tab-btn").click(function(){
+	$(this).addClass("cur").siblings().removeClass("cur")
+	$(".tab-con").eq($(this).index()).addClass("cur").siblings().removeClass("cur")
+})
