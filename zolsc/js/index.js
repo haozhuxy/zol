@@ -82,3 +82,33 @@ $(".tab-btn").click(function(){
 	$(this).addClass("cur").siblings().removeClass("cur")
 	$(".tab-con").eq($(this).index()).addClass("cur").siblings().removeClass("cur")
 })
+
+
+//搜索框
+$(window).scroll(function(){
+	var sTop=$(document).scrollTop()
+	if(sTop>470){
+		$("#search_layer_fixed").show()
+	}else{
+		$("#search_layer_fixed").hide()
+	}
+})
+
+//楼梯
+$(window).scroll(function(){
+	var yTop=$(document).scrollTop()
+	if(yTop>470){
+		$(".fixed-nav-bar").show()
+	}else{
+		$(".fixed-nav-bar").hide()
+	}
+})
+
+$(".floorbtn").click(function(){
+	var y1=$(".floor").eq($(this).index()).offset().top
+	$("body,html").animate({"scrollTop":y1-40},1000)
+})
+
+$(".back-top").click(function(){
+	$("body,html").animate({"scrollTop":0},1200)
+})

@@ -3,7 +3,162 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
 	</head>
 	<body>
+		<!------------------------header------------------->
+		
+		<div class="wrapper">
+			<div class="header clearfix">
+				<div class="register-bar">
+					<a href="login.html">立即登录</a>
+					已经有Z商城帐号？
+				</div>
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/imgzc/logo_130x60.png" alt="" />
+						<p>中关村在线旗下网上商城</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!---------------------------main----------------------->
+		
+		<div class="register-wrap clearfix">
+			<div class="title">
+				30秒快速注册，加入Z商城
+			</div>
+			<form id="J_RegisterForm" action="javascript:void(0)">
+				<div class="register-module">
+					<ul class="register-tab clearfix">
+						<li class="current">
+							<span class="phone-number">
+								用手机号注册
+							</span>
+						</li>
+					</ul>
+					
+					<div class="register-phone-number">
+						<div class="register-form">
+							<div class="label">
+								<em class="xh">
+									*
+								</em>
+								手机号：
+							</div>
+							<input type="text" maxlength="11" class="text" 
+								id="phone_num"/>
+								<i class="right-tips">
+									
+								</i>
+								<i class="wrong-tips">
+									请填写有效的11位手机号码
+								</i>
+								<div class="tips">
+									请填写手机号码
+								</div>
+						</div>
+						
+						<div class="register-form">
+							<div class="label">
+								<em class="xh">
+									*
+								</em>
+								验证码：
+							</div>
+							<div class="captcha clearfix">
+								<input class="text" id="checkcode" type="text" />
+								<span class="captcha-img">
+									B4CE9
+								</span>
+								<a class="captcha-change" href="javascript:void(0)">
+									换一张
+								</a>
+								
+							</div>
+							<i style="margin-left:38px;" class="wrong-tips">
+								请填写验证码
+							</i>
+							<div class="tips">
+								请填写验证码
+							</div>	
+						</div>
+						
+						<div class="register-form">
+							<div class="label">
+								<em class="xh">
+									*
+								</em>
+								验证码：
+							</div>
+							<div class="msg-captcha clearfix">
+								<input type="text" class="text"
+									id="phone_code"/>
+									<input type="button" class="get-captcha"
+										id="phone_send" value="获取短信验证码"/>
+							</div>
+							<i class="wrong-tips">
+								请填写验证码
+							</i>
+							<div class="tips">
+								请填写手机号码，然后点击[获取验证码]
+							</div>
+						</div>
+						
+						<div class="register-form">
+							<div class="label">
+								<em class="xh">
+									*
+								</em>
+								密码：
+							</div>
+							<input type="text" maxlength="16" class="text" 
+								id="pwd"/>
+								<i class="right-tips">
+									
+								</i>
+								<i class="wrong-tips">
+									请填写密码
+								</i>
+								<div class="tips">
+								 6-16位字母和数字的组合，不可用特殊字符
+								</div>
+						</div>
+						
+						<div class="register-form">
+							<div class="label">
+								<em class="xh" id="xhl">
+								*
+								</em>
+								确认密码：
+							</div>
+							<input type="text" maxlength="16" class="text" 
+								id="qpwd"/>
+								<i class="right-tips">
+									
+								</i>
+								<i class="wrong-tips">
+									请填写确认密码
+								</i>
+								<div class="tips">
+									再次输入密码
+								</div>
+						</div>
+						
+						<label class="agreement">
+							<input type="checkbox" id="read" checked="checked"/>同意
+							<a href="javascript:void(0)">《商城用户协议》</a>
+							<a href="javascript:void(0)">《隐私权说明》</a>
+						</label>
+						
+						<input type="button" value="注册" class="register-btn"/>
+						
+					</div>
+				</div>
+			</form>
+		</div>
 	</body>
 </html>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/register.js"></script>
