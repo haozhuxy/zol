@@ -1,0 +1,103 @@
+article, aside, canvas, details, figcaption, figure,footer, header, hgroup, menu, nav, section, summary{ display: block;}
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,a{margin:0;padding:0;}
+em,i{font-style: normal;}
+li,ul,ol{list-style:none;}
+a{text-decoration:none;color:#333;}
+img{border:none;display:block;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+.blue{color:#3266cb;}
+.clearfix{clear: both;overflow: hidden;}
+body{color:#333;}
+
+input{vertical-align: middle;font-size: 100%;outline: none;
+font-size: 12px;color:#333;}
+/*--------------------全局样式-----------------------*/
+
+/*--------------header---------------------*/
+
+.wrapper{width:990px;margin:0 auto;}
+.header{padding-top:14px;padding-bottom:20px;}
+.register-bar{float: right;padding:21px 0 0;font-size:14px;line-height:22px;}
+.register-bar a{float: right;height:16px;padding: 3px 10px;color:#c00;
+font-size:14px;line-height: 14px;font-family: "微软雅黑";font-weight: normal;}
+.logo{float: left;}
+.header .logo a{float:left;color:#134ba0;}
+.header .logo a img{float: left;width: 130px;height: 60px;}
+.header .logo p{float:left;margin:8px 0 0 8px;padding-left: 10px;font-size:14px;
+line-height: 44px;font-family: simsun;color:#666;border-left: 1px solid #E6E6E6;
+cursor: pointer;}
+.register-bar a:hover{background: #ce1a1b;color:#fff;}
+
+/*-----------------------main-----------------------*/
+
+.login-wrap{margin-top:26px;border:1px solid #E6E6E6;background: #fff;}
+.login-wrap .ad-div{float: left;}
+.login-wrap .ad-div img{display: block;width:520px;height:350px;}
+.login-layer{float: right;padding:0 85px 0 0;width:290px;}
+.login-head{position: relative;zoom:1;padding: 20px 0 0;border-bottom:2px solid #E6E6E6;}
+
+.login-head h3{display: block;width:50%;float: left;height: 35px;overflow: hidden;
+font:18px/35px "微软雅黑";color:#666;text-align: center;margin-bottom: -2px;cursor:pointer;}
+.login-head .cur{border-bottom:4px solid #de3030;color:#333;z-index: 10;}
+
+#ls1{display: block;}
+#ls2{display: none;}
+.login-content{padding: 25px 0 0;position: relative;zoom: 1;}
+.login-wrong-tips{background: url(../images/imgdl/bg.png) no-repeat;display: block;
+position: absolute;top:1px;left: 0;padding-left:25px;width:263px;height:22px;
+font:12px/22px arial;color:#FF3333;border: 1px solid #f99;
+background-color: #fff2f2;background-position: -270px -89px;}
+
+.form-item{position: relative;margin: 0 0 7px;padding: 8px 5px;height:22px;
+border:1px solid #ccc;}
+.username{z-index: 2;margin: 0 0 10px;}
+.form-item .text{display: block;width:278px;height: 22px;font:14px/22px arial;
+border: none;vertical-align: middle;}
+.form-other{padding:0 0 10px;overflow: hidden;zoom:1;}
+.form-other .otherLogin-bar{float: left;padding-left: 17px;
+background: url(../images/imgdl/shop_login_bg.png) no-repeat -276px -137px;
+color:#333;line-height: 28px;}
+.form-other .mobileLogin-bar{background-position:-280px -113px;}
+.form-other a{float: right;color:#134BA0;font-size: 12px;}
+.form-other .forget-password{line-height:28px;}
+.form-other a:hover{color:#c00;text-decoration: underline;}
+.login-layer-btn{background: url(../images/imgdl/bg.png) no-repeat;
+vertical-align: middle;display: block;margin: 0 0 10px;width:290px;height:40px;
+font:bold 14px/40px arial;color:#fff;text-align: center;border: none;
+background-position: 0 0 ;cursor: pointer;}
+.collaborate{width:290px;text-align: center;margin-top: 15px;color:#666;}
+.xian{float:left;height: 1px;background: #f0f0f0;width:100px;margin-top:7px;}
+.collaborate p{float: left;font-size: 12px;text-align: center;color:#666;}
+.login-foot{margin:10px 0 0;}
+.login-foot .weixin{float: left;margin:0 12px 0 25px;width:38px;height:38px;
+text-indent: -9999px;overflow: hidden;
+background: url(../images/imgdl/bgs2.png) 0 0 no-repeat;}
+.login-foot .weixin:hover{background-position:0 -38px;}
+.login-foot .sina{background: url(../images/imgdl/bg.png) no-repeat;}
+.login-foot .qq{background: url(../images/imgdl/bg.png) no-repeat;}
+.login-foot .alipay{background: url(../images/imgdl/bg.png) no-repeat;}
+.login-foot .baidu{background: url(../images/imgdl/bg.png) no-repeat;}
+.login-foot .sina,.login-foot .qq,.login-foot .alipay,
+.login-foot .baidu{
+float:left;margin:0 12px 0 0;width:38px;height:38px;text-indent:-9999em;overflow: hidden;}
+.login-foot .sina{background-position: 0 -82px;}
+.login-foot .sina:hover{background-position:0 -121px;}
+.login-foot .qq{background-position: -39px -82px;}
+.login-foot .qq:hover{background-position:-39px -121px;}
+.login-foot .alipay{background-position: -78px -82px;}
+.login-foot .alipay:hover{background-position:-78px -121px;}
+.login-foot .baidu{background-position:-117px -82px;}
+.login-foot .baidu:hover{background-position: -117px -121px;}
+
+
+/*------------------------------footer-----------------------*/
+
+.footer{margin:50px 0 0;padding: 12px 0 25px;border-top:1px solid #dcdcdc;}
+.footer .about{float:left;margin-left:-10px;color:#ccc;}
+.footer .about a{margin:0 10px;color:#666;font-size:12px;}
+.footer .about a:hover{color:#c00;text-decoration: underline;}
+.copyright{float: right;color: #666;font-size: 12px;}
+.footer{position: fixed;left:0;bottom:0;width: 100%;}
+
+
+

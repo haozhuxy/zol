@@ -40,7 +40,7 @@
 					</ul>
 					
 					<div class="register-phone-number">
-						<div class="register-form">
+						<div class="register-form" id="phoneNum">
 							<div class="label">
 								<em class="xh">
 									*
@@ -49,18 +49,16 @@
 							</div>
 							<input type="text" maxlength="11" class="text" 
 								id="phone_num"/>
-								<i class="right-tips">
+								
+								<i>
 									
-								</i>
-								<i class="wrong-tips">
-									请填写有效的11位手机号码
 								</i>
 								<div class="tips">
 									请填写手机号码
 								</div>
 						</div>
 						
-						<div class="register-form">
+						<div class="register-form" id="yz">
 							<div class="label">
 								<em class="xh">
 									*
@@ -78,14 +76,14 @@
 								
 							</div>
 							<i style="margin-left:38px;" class="wrong-tips">
-								请填写验证码
+								
 							</i>
 							<div class="tips">
 								请填写验证码
 							</div>	
 						</div>
 						
-						<div class="register-form">
+						<div class="register-form" id="sjyz">
 							<div class="label">
 								<em class="xh">
 									*
@@ -99,14 +97,14 @@
 										id="phone_send" value="获取短信验证码"/>
 							</div>
 							<i class="wrong-tips">
-								请填写验证码
+								
 							</i>
 							<div class="tips">
 								请填写手机号码，然后点击[获取验证码]
 							</div>
 						</div>
 						
-						<div class="register-form">
+						<div class="register-form" id="mm">
 							<div class="label">
 								<em class="xh">
 									*
@@ -115,18 +113,16 @@
 							</div>
 							<input type="text" maxlength="16" class="text" 
 								id="pwd"/>
-								<i class="right-tips">
-									
-								</i>
+								
 								<i class="wrong-tips">
-									请填写密码
+									
 								</i>
 								<div class="tips">
 								 6-16位字母和数字的组合，不可用特殊字符
 								</div>
 						</div>
 						
-						<div class="register-form">
+						<div class="register-form" id="qrmm">
 							<div class="label">
 								<em class="xh" id="xhl">
 								*
@@ -135,11 +131,9 @@
 							</div>
 							<input type="text" maxlength="16" class="text" 
 								id="qpwd"/>
-								<i class="right-tips">
-									
-								</i>
+								
 								<i class="wrong-tips">
-									请填写确认密码
+									
 								</i>
 								<div class="tips">
 									再次输入密码
@@ -157,8 +151,39 @@
 					</div>
 				</div>
 			</form>
+			
+			<div class="fast-login">
+				<p>
+					如果您已经注册,请
+					<a href="login.html">直接登录</a>
+					或者用以下方式登录:
+				</p>
+				<div class="fast-login-list">
+					<a href="javascript:void(0)" class="weixin">微信登录</a>
+					<a href="javascript:void(0)" class="sina">新浪微博登录</a>
+					<a href="javascript:void(0)" class="qq">腾讯QQ登录</a>
+					<a href="javascript:void(0)" class="alipay">支付宝帐号登录</a>
+					<a href="javascript:void(0)" class="baidu">百度登录</a>
+				</div>
+			</div>
+		</div>
+		
+		<!----------------------footer--------------------------->
+		
+		<div class="footer">
+			<div class="wrapper clearfix">
+				<div class="about">
+					<a href="javascript:void(0)">关于Z商城</a>|
+					<a href="javascript:void(0)">联系我们</a>|
+					<a href="javascript:void(0)">帮助中心</a>
+				</div>
+				<div class="copyright">
+					&copy;2018. 中关村在线版权所有
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
 <script src="js/jquery-1.11.1.js"></script>
 <script src="js/register.js"></script>
+<script src="js/public.js"></script>

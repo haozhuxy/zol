@@ -8,7 +8,8 @@ h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
 .blue{color:#3266cb;}
 .clearfix{clear: both;overflow: hidden;}
 body{color:#333;}
-input{vertical-align: middle;font-size: 100%;}
+input{vertical-align: middle;font-size: 100%;outline: none;
+font-size: 12px;color:#333;}
 /*--------------------全局样式-----------------------*/
 
 /*--------------header---------------------*/
@@ -79,6 +80,31 @@ border:none;cursor: pointer;background: url(../images/imgzc/bg.png) no-repeat;
 background-position: 0 0;}
 .agreement a{color:#134ba0;}
 .agreement a:hover{color:#f33;text-decoration: underline;}
+.fast-login{float: right;margin:30px 0 0;padding: 0 80px 0 25px;width:170px;
+border-left:1px solid #F5F5F5;}
+.fast-login p{margin:-6px 0 0;font:12px/24px arial;color:#666;}
+.fast-login p a{margin: 0 6px;color:#134BA0;}
+.fast-login-list a:hover{opacity: 0.8;}
+.fast-login-list .weixin{background: url(../images/imgzc/weixin.png) 0 0 no-repeat;
+background-size: 100%;}
+.fast-login-list a{display: block;margin: 15px 0 0;width:170px;height:36px;
+text-indent: -9999em;overflow: hidden;zoom:1;}
+.fast-login a:hover{color:#c00;text-decoration: underline;}
+.fast-login-list a{background: url(../images/imgzc/login-bg.png) no-repeat;}
+.fast-login-list .sina{background-position:0 0;}
+.fast-login-list .qq{background-position:0 -37px;}
+.fast-login-list .alipay{background-position:0 -74px;}
+.fast-login-list .baidu{background-position:0 -111px;}
+
+
+/*------------------------------footer-----------------------*/
+
+.footer{margin:50px 0 0;padding: 12px 0 25px;border-top:1px solid #dcdcdc;}
+.footer .about{float:left;margin-left:-10px;color:#ccc;}
+.footer .about a{margin:0 10px;color:#666;font-size:12px;}
+.footer .about a:hover{color:#c00;text-decoration: underline;}
+.copyright{float: right;color: #666;font-size: 12px;}
+
 
 
 
