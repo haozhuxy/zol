@@ -56,3 +56,43 @@ function Tab(btns,divs){
 }
 
 
+ 	//登录验证
+	var flagDlname=null
+	$("#loginUser").blur(function(){
+		var brr=getCookie("ulistzhxy")
+		if($("#loginUser").val()==brr.uname){
+			flagDlname=true
+			
+		}else{
+			flagDlname=false
+			
+		}
+	})
+	
+	var flagDlpwd=null
+	$("#loginPwd").blur(function(){
+		var brr=getCookie("ulistzhxy")
+		if($("#loginPwd").val()==brr.pwd){
+			flagDlpwd=true
+			
+		}else{
+			flagDlpwd=false
+			
+		}
+	})
+	
+   
+   $(".login-layer-btn").click(function(){
+   	if(flagDlpwd&&flagDlname){
+   		$(".login-wrong-tips").hide()
+   		var t3=setTimeout(function(){
+   			$(".login-layer-btn").val("正在登录...")
+   			var t5=setTimeout(function(){
+   				$(window).attr("location","index.html")
+   			},500)
+   		},400)
+   	}else{
+   		$(".login-wrong-tips").show()
+   		$(".login-wrong-tips").html("密码或用户名错误！")
+   	}
+   })

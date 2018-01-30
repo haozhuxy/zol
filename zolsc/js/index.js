@@ -112,3 +112,52 @@ $(".floorbtn").click(function(){
 $(".back-top").click(function(){
 	$("body,html").animate({"scrollTop":0},1200)
 })
+
+
+//登录 退出
+
+var brr=getCookie("ulistzhxy")
+
+if(brr.length==0){
+	$("#wdl").show()
+	$("#mfzc").show()
+	$("#dlzt").hide()
+	
+	$("#tcdl").hide()
+}else{
+	$("#wdl").hide()
+	$("#mfzc").hide()
+	$("#dlzt").show()
+	$("#dlzt").find("a").html(brr.uname)
+	$("#tcdl").show()
+	
+}
+
+
+
+//侧边栏
+
+$("#right li").mouseenter(function(){
+	$(this).css("background","#f33")
+	$(this).find("i").css("background","#f33")
+	$(this).find("em").css("background","#f33")
+	$(this).find("em").animate({"left":-70},100)
+	
+	
+}).mouseleave(function(){
+	
+	$(this).css("background","#2D2D2D")
+	$(this).find("i").css("background","#2D2D2D")
+	$(this).find("em").css("background","#2D2D2D")
+	$(this).find("em").animate({"left":30},100)
+})
+
+$("#right a").mouseenter(function(){
+	$(this).css("background","#f33")
+	
+}).click(function(){
+	$("body,html").animate({"scrollTop":0},0)
+}).mouseleave(function(){
+	$(this).css("background","#2D2D2D")
+})
+

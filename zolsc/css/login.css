@@ -43,7 +43,7 @@ font:18px/35px "微软雅黑";color:#666;text-align: center;margin-bottom: -2px;
 #ls1{display: block;}
 #ls2{display: none;}
 .login-content{padding: 25px 0 0;position: relative;zoom: 1;}
-.login-wrong-tips{background: url(../images/imgdl/bg.png) no-repeat;display: block;
+.login-wrong-tips{background: url(../images/imgdl/bg.png) no-repeat;display:none;
 position: absolute;top:1px;left: 0;padding-left:25px;width:263px;height:22px;
 font:12px/22px arial;color:#FF3333;border: 1px solid #f99;
 background-color: #fff2f2;background-position: -270px -89px;}

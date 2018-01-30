@@ -32,6 +32,8 @@ h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
 .head a:hover{color:#c10000;text-decoration: underline;}
 .l1 li{float:left;margin:0 10px;}
 .l1:first-child li{margin-left:20px;}
+.l1 #dlzt{display: none;}
+.l1 #tcdl{display: none;}
 .r1 li{float:right;}
 .r1 .r1a{margin-right:20px;}
 .r1 .r1b{margin-right:35px;}
@@ -467,30 +469,26 @@ color:#fff;text-align: center;}
 
 /*--------------------------侧边栏-----------------------------*/
 
-/*.zc-side-toolbar-box{position: fixed;top:0;right:0px;z-index:1800;
-height:100%;background:red;overflow: hidden;}
-.zc-toolbar-tabbar{position: absolute;top:0;left:-37px;width:37px;
-height:100%;background:#2D2D2D;z-index: 2000;}
-.zc-operation-tabbox{position: absolute;top:50%;left:0;margin:-250px 0 0;
-width:37px;height:266px;}
-.zc-tab-order{position: relative;zoom: 1;margin:0 0 12px;background:#2d2d2d;}
-.zc-tab-footprint{position: relative;zoom: 1;margin:0 0 12px;background:#2d2d2d;}
-.zc-tab-cart{position: relative;zoom: 1;margin:0 0 12px;background:#2d2d2d;}
-.zc-tab-coupons{position: relative;zoom: 1;margin:0 0 12px;background:#2d2d2d;}
-.zc-toolbar-tool{position:absolute;bottom: 0;right: 0;}
+#right{width:37px;background: #2D2D2D;position: fixed;top:0;right: 0;
+font-size: 12px;height: 100%;z-index: 99999;}
+#right ul{margin-top: 97px;}
+#right li{width:37px;height:37px;position: relative;line-height:37px;
+margin-bottom:12px;text-align: center;}
+#right li .iconfont{font-size:24px;line-height:37px;color:#fff;display: inline-block;
+background: #2D2D2D;}
+#right li em{font-style: normal;font-size: 12px;color:#fff;height:37px;
+width: 70px;line-height:37px;position: absolute;left:30px;top: 0;
+display:block;z-index:-3;background: #2D2D2D;text-align: center;}
+#right a{position: absolute;bottom:12px;width:37px;height:37px;line-height:37px;
+text-align: center;color:#fff;}
+#right a .iconfont{font-size:20px;}
 
-.zc-toolbar-tool .zc-backtop{display: block;width:37px;height:37px;
-background-color: #2D2D2D ;background: url(../images/img1/bar_ico.png) no-repeat;
-background-position:0 -185px;}
-.zc-tab-ico{width:37px;height:37px;cursor: pointer;
-background: url(../images/img1/bar_ico.png) no-repeat;}
-.zc-tab-order .zc-tab-ico{background-position: 0 0;}
-.zc-tab-footprint .zc-tab-ico{background-position: 0 -74px;}
-.zc-tab-cart .zc-tab-ico{background-position:0 -111px;}
-.zc-tab-coupons .zc-tab-ico{background-position: -693px;}
-.zc-tab-tips{position: absolute;top:0;right:-68px;background: #f33;
-font-size:12px;line-height:37px;font-family: "微软雅黑";color:#fff;
-text-align: center;white-space: nowrap;}*/
+
+
+
+
+
+
 
 
 

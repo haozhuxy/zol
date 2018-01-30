@@ -135,6 +135,13 @@ $("#phone_code").blur(function(){
 
 $(".register-btn").click(function(){
 	if(flagQpwd&&flagPwd&&flagSjyz&&flagYz&&flagTel&&$("#read").prop("checked")){
+		
+		var json={
+			"uname":$("#phone_num").val(),
+			"pwd":$("#pwd").val()
+		}
+		setCookie("ulistzhxy",JSON.stringify(json))
+		
 		$(".register-btn").val("正在注册...")
 		var timer=setTimeout(function(){
 			$(".register-btn").val("注册成功")
@@ -147,8 +154,4 @@ $(".register-btn").click(function(){
 })
 
 
-
-//$("#read").click(function(){
-//	console.log($("#read").prop("checked"))
-//})
 
