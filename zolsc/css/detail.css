@@ -276,8 +276,11 @@ border-left: 1px solid #ededed;}
 .group-rec-hd{height:32px;line-height:32px;padding:0 10px;
 border-bottom:1px solid #ededed;background-color: #FAFAFA;}
 .group-rec-hd .tl{float: left;font-size: 14px;font-weight: normal;color:#333;}
+.group-rec-hd .change{float: right;font-size:12px;color:#36c;}
+.group-rec-hd .change:hover{text-decoration: underline;}
 .group-rec-list{padding:0 15px;}
 .group-rec-list li{padding:10px 0 8px;border-bottom:1px dotted #E6E6E6;}
+.group-rec-list li.last{border-bottom: none;}
 .group-rec-list .pic{display: block;width:150px;height:150px;line-height:150px;
 font-size: 0;text-align: center;margin-bottom:5px;}
 .group-rec-list .pic img{max-width: 100%;vertical-align: middle;}

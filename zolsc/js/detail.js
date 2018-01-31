@@ -162,3 +162,73 @@ $("#right a").mouseenter(function(){
 	$(this).css("background","#2D2D2D")
 })
 
+
+//换一组  ajax
+
+$.ajax({
+	type:"get",
+	url:"data.json",
+	success:function(res){
+		var str=""
+		for(var i=0;i<res.length;i++){
+			str+=`
+			     <li>
+							<a href="javascript:;" class="pic">
+								<img src="images/imgax/${res[i].src}"/>
+								
+							</a>
+							
+							<p class="ware-name">
+								<a href="javascript:;">
+									${res[i].name}
+								</a>
+							</p>
+							<div class="price">
+								<span class="now">
+								    ${res[i].now}
+								</span>
+								<span class="original">
+									${res[i].original}
+								</span>
+							</div>
+						</li>
+			
+			`
+		}
+		
+		$(".group-rec-list").html(str)
+		
+		
+			$(".group-rec-list li").eq(3).hide()
+		    $(".group-rec-list li").eq(4).hide()
+		    $(".group-rec-list li").eq(5).hide()
+		
+		$(".group-rec-list li").eq(2).addClass("last")
+		$(".group-rec-list li").eq(5).addClass("last")
+		
+		
+	}
+});
+
+
+
+
+if($(".change")){
+	var start=0
+	var total=6
+	$(".change").click(function(){
+		start+=3
+		if(start>=total){
+			start=0
+		}
+		
+		$(".group-rec-list li").hide()
+		$(".group-rec-list li").each(function(index){
+			if(index>=start&&index<start+3){
+				$(".group-rec-list li:eq("+index+")").show()
+			}
+		})
+	})
+}
+
+

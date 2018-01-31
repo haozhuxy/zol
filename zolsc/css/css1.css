@@ -154,7 +154,7 @@ vertical-align:top;overflow: hidden;font-size: 0;}
 .bx-page-item .active{background:#CE1A1B;}
 
 /*------------------main-------------------*/
-.main{width:1202px;height:4723px;margin:0 auto;background:#F7F7F7;}
+.main{width:1200px;margin:0 auto;background:#F7F7F7;}
 
   /*--------------------团购 tuan--------------*/
  #tuan{padding-top:34px;zoom: 1;clear:both;overflow: hidden;}
@@ -164,6 +164,7 @@ vertical-align:top;overflow: hidden;font-size: 0;}
  .tuan-region_banner a{position:absolute;left:27px;bottom: 43px;width: 107px;height: 31px;
  line-height: 31px;text-align: center;font-size: 16px;color:#fff;background: url(../images/img1/moreTuan.png) no-repeat center;}
  .tuan_arrival{float:right;width:356px;}
+ .tuan-region_banner a:hover{text-decoration: underline;}
  .tuan_arrival .itemj{height:140px;padding:30px 20px 17px;background: #fff;}
  .tuan_arrival .pic{width: 140px;height: 140px;position: relative;float: left;}
  .tuan_arrival .pic img{width:140px;height: 140px;vertical-align: top;}
